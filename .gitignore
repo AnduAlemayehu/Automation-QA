@@ -1,0 +1,20 @@
+
+# Node modules
+node_modules/
+
+# Playwright test results
+test-results/
+playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Local environment or data files
+.env
+
+# Logs
+*.log
+
+# Optional OS files
+.DS_Store
+Thumbs.db
