@@ -1,0 +1,765 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic:
+              - img
+            - generic [ref=e12]:
+              - combobox "Find teams, markets, events and more..." [ref=e13]
+              - button [disabled] [ref=e14] [cursor=pointer]:
+                - img [ref=e15]: search
+          - generic [ref=e17]:
+            - img [ref=e18] [cursor=pointer]: refresh
+            - generic [ref=e19]: "Balance: 1,000.00"
+            - generic [ref=e21]: "Exposure: 0.00"
+            - generic [ref=e23]: "Avl. to bet: 1000"
+            - button [ref=e26] [cursor=pointer]:
+              - img [ref=e27]
+        - generic [ref=e29]:
+          - generic [ref=e32]:
+            - link "Home" [ref=e33] [cursor=pointer]:
+              - /url: /app/main/(navigation:sports//content:home/highlights/cricket)
+            - link "In-Play" [ref=e34] [cursor=pointer]:
+              - /url: /app/main/(navigation:sports//content:in-play)
+            - link "My Markets" [ref=e35] [cursor=pointer]:
+              - /url: /app/main/(navigation:sports//content:my-markets)
+            - link "Soccer" [ref=e36] [cursor=pointer]:
+              - /url: /app/main/(navigation:sports//content:soccer)
+            - link "Cricket" [ref=e37] [cursor=pointer]:
+              - /url: /app/main/(navigation:sports//content:cricket)
+            - link "Tennis" [ref=e38] [cursor=pointer]:
+              - /url: /app/main/(navigation:sports//content:tennis)
+          - generic [ref=e39]: Welcome, john
+      - generic [ref=e42]:
+        - complementary [ref=e47]:
+          - generic [ref=e48]:
+            - button "Favorites" [ref=e50] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]: star
+                - generic [ref=e54]: Favorites
+            - generic [ref=e56]:
+              - button "Sports" [expanded] [ref=e57] [cursor=pointer]:
+                - generic [ref=e59]:
+                  - img [ref=e60]: menu
+                  - link "Sports" [ref=e61]:
+                    - /url: /app/main/(navigation:sports//content:in-play/current)
+              - region "Sports" [ref=e64]:
+                - list [ref=e68]:
+                  - listitem [ref=e69]:
+                    - link "Soccer" [ref=e70] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/1//content:in-play/current)
+                  - listitem [ref=e71]:
+                    - link "Soccer - Fixtures" [ref=e72] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/2147483647//content:in-play/current)
+                  - listitem [ref=e73]:
+                    - link "Cricket" [ref=e74] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/4//content:in-play/current)
+                  - listitem [ref=e75]:
+                    - link "Tennis" [ref=e76] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/2//content:in-play/current)
+                  - listitem [ref=e77]:
+                    - link "Horse Racing" [ref=e78] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/7//content:in-play/current)
+                  - listitem [ref=e79]:
+                    - link "Horse Racing - Today's Card" [ref=e80] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/2147483666//content:in-play/current)
+                  - listitem [ref=e81]:
+                    - link "Basketball" [ref=e82] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/7522//content:in-play/current)
+                  - listitem [ref=e83]:
+                    - link "Greyhound Racing" [ref=e84] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/4339//content:in-play/current)
+                  - listitem [ref=e85]:
+                    - link "Greyhound Racing - Today's Card" [ref=e86] [cursor=pointer]:
+                      - /url: /app/main/(navigation:event_type/2147483999//content:in-play/current)
+          - generic [ref=e87]:
+            - link "Next Horse Race" [ref=e88] [cursor=pointer]:
+              - /url: /app/main/(navigation:event/35125294//content:event-markets/35125294/market/1.252461872)
+            - link "Next Greyhound Race" [ref=e89] [cursor=pointer]:
+              - /url: /app/main/(navigation:event/35126909//content:event-markets/35126909/market/1.252470539)
+        - generic [ref=e93]:
+          - tablist [ref=e94]:
+            - generic [ref=e97]:
+              - tab "In-Play" [selected] [ref=e98] [cursor=pointer]:
+                - generic [ref=e100]: In-Play
+              - tab "Today" [ref=e101] [cursor=pointer]:
+                - generic [ref=e103]: Today
+              - tab "Tomorrow" [ref=e104] [cursor=pointer]:
+                - generic [ref=e106]: Tomorrow
+          - tabpanel "In-Play" [ref=e107]:
+            - generic [ref=e108]:
+              - generic [ref=e109]:
+                - generic [ref=e111]: Soccer
+                - combobox [ref=e112]:
+                  - option "All Leagues" [selected]
+                  - option "Egyptian 2nd Division"
+                  - option "Egyptian Cup"
+                  - option "UAE Arabian Gulf League"
+                  - option "Arena Cup"
+                  - option "AFC U23 Championship"
+                - table [ref=e114]:
+                  - rowgroup [ref=e115]:
+                    - row "Event Matched 1 Draw 2" [ref=e116]:
+                      - columnheader "Event" [ref=e117]:
+                        - generic [ref=e118]:
+                          - generic [ref=e119]: Event
+                          - button [ref=e120] [cursor=pointer]:
+                            - img [ref=e121]: unfold_more
+                      - columnheader "Matched" [ref=e122]:
+                        - generic [ref=e123]:
+                          - generic [ref=e124]: Matched
+                          - button [ref=e125] [cursor=pointer]:
+                            - img [ref=e126]: unfold_more
+                      - columnheader "1" [ref=e127]
+                      - columnheader "Draw" [ref=e128]
+                      - columnheader "2" [ref=e129]
+                      - columnheader [ref=e130]
+                  - rowgroup [ref=e131]:
+                    - row "Telecom Egypt SC v Olympic El Qanal In-Play (Egyptian 2nd Division) 74,180 5.9 591 6.4 286 1.85 136 1.88 832 3.3 781 3.4 115" [ref=e132]:
+                      - cell "Telecom Egypt SC v Olympic El Qanal In-Play (Egyptian 2nd Division)" [ref=e133]:
+                        - link "Telecom Egypt SC v Olympic El Qanal In-Play" [ref=e134] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35124044//content:event-markets/35124044)
+                          - generic [ref=e136]: Telecom Egypt SC v Olympic El Qanal In-Play
+                        - generic [ref=e137]: (Egyptian 2nd Division)
+                      - cell "74,180" [ref=e138]
+                      - cell "5.9 591" [ref=e139]:
+                        - generic [ref=e140]:
+                          - generic [ref=e141]: "5.9"
+                          - generic [ref=e142]: "591"
+                      - cell "6.4 286" [ref=e143]:
+                        - generic [ref=e144]:
+                          - generic [ref=e145]: "6.4"
+                          - generic [ref=e146]: "286"
+                      - cell "1.85 136" [ref=e147]:
+                        - generic [ref=e148]:
+                          - generic [ref=e149]: "1.85"
+                          - generic [ref=e150]: "136"
+                      - cell "1.88 832" [ref=e151]:
+                        - generic [ref=e152]:
+                          - generic [ref=e153]: "1.88"
+                          - generic [ref=e154]: "832"
+                      - cell "3.3 781" [ref=e155]:
+                        - generic [ref=e156]:
+                          - generic [ref=e157]: "3.3"
+                          - generic [ref=e158]: "781"
+                      - cell "3.4 115" [ref=e159]:
+                        - generic [ref=e160]:
+                          - generic [ref=e161]: "3.4"
+                          - generic [ref=e162]: "115"
+                      - cell [ref=e163]:
+                        - generic [ref=e164]:
+                          - button [ref=e165]:
+                            - img [ref=e166] [cursor=pointer]: info
+                          - button [ref=e167]:
+                            - img [ref=e168] [cursor=pointer]: add_circle
+                    - row "Tersana SC v El Seka Elhadeed In-Play (Egyptian 2nd Division) 209,299 16.5 267 19 97 3.95 285 4.2 363 1.43 1,066 1.46 1,009" [ref=e169]:
+                      - cell "Tersana SC v El Seka Elhadeed In-Play (Egyptian 2nd Division)" [ref=e170]:
+                        - link "Tersana SC v El Seka Elhadeed In-Play" [ref=e171] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35124037//content:event-markets/35124037)
+                          - generic [ref=e173]: Tersana SC v El Seka Elhadeed In-Play
+                        - generic [ref=e174]: (Egyptian 2nd Division)
+                      - cell "209,299" [ref=e175]
+                      - cell "16.5 267" [ref=e176]:
+                        - generic [ref=e177]:
+                          - generic [ref=e178]: "16.5"
+                          - generic [ref=e179]: "267"
+                      - cell "19 97" [ref=e180]:
+                        - generic [ref=e181]:
+                          - generic [ref=e182]: "19"
+                          - generic [ref=e183]: "97"
+                      - cell "3.95 285" [ref=e184]:
+                        - generic [ref=e185]:
+                          - generic [ref=e186]: "3.95"
+                          - generic [ref=e187]: "285"
+                      - cell "4.2 363" [ref=e188]:
+                        - generic [ref=e189]:
+                          - generic [ref=e190]: "4.2"
+                          - generic [ref=e191]: "363"
+                      - cell "1.43 1,066" [ref=e192]:
+                        - generic [ref=e193]:
+                          - generic [ref=e194]: "1.43"
+                          - generic [ref=e195]: 1,066
+                      - cell "1.46 1,009" [ref=e196]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: "1.46"
+                          - generic [ref=e199]: 1,009
+                      - cell [ref=e200]:
+                        - generic [ref=e201]:
+                          - button [ref=e202]:
+                            - img [ref=e203] [cursor=pointer]: info
+                          - button [ref=e204]:
+                            - img [ref=e205] [cursor=pointer]: add_circle
+                    - row "El Mansurah v Abo Qair Semads In-Play (Egyptian 2nd Division) 69,195 6 148 6.4 15 1.64 296 1.67 312 4 353 4.4 398" [ref=e206]:
+                      - cell "El Mansurah v Abo Qair Semads In-Play (Egyptian 2nd Division)" [ref=e207]:
+                        - link "El Mansurah v Abo Qair Semads In-Play" [ref=e208] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35124035//content:event-markets/35124035)
+                          - generic [ref=e210]: El Mansurah v Abo Qair Semads In-Play
+                        - generic [ref=e211]: (Egyptian 2nd Division)
+                      - cell "69,195" [ref=e212]
+                      - cell "6 148" [ref=e213]:
+                        - generic [ref=e214]:
+                          - generic [ref=e215]: "6"
+                          - generic [ref=e216]: "148"
+                      - cell "6.4 15" [ref=e217]:
+                        - generic [ref=e218]:
+                          - generic [ref=e219]: "6.4"
+                          - generic [ref=e220]: "15"
+                      - cell "1.64 296" [ref=e221]:
+                        - generic [ref=e222]:
+                          - generic [ref=e223]: "1.64"
+                          - generic [ref=e224]: "296"
+                      - cell "1.67 312" [ref=e225]:
+                        - generic [ref=e226]:
+                          - generic [ref=e227]: "1.67"
+                          - generic [ref=e228]: "312"
+                      - cell "4 353" [ref=e229]:
+                        - generic [ref=e230]:
+                          - generic [ref=e231]: "4"
+                          - generic [ref=e232]: "353"
+                      - cell "4.4 398" [ref=e233]:
+                        - generic [ref=e234]:
+                          - generic [ref=e235]: "4.4"
+                          - generic [ref=e236]: "398"
+                      - cell [ref=e237]:
+                        - generic [ref=e238]:
+                          - button [ref=e239]:
+                            - img [ref=e240] [cursor=pointer]: info
+                          - button [ref=e241]:
+                            - img [ref=e242] [cursor=pointer]: add_circle
+                    - row "Haras El Hodood v Smouha In-Play (Egyptian Cup) 405,384 1.67 4,035 1.69 798 3.05 265 3.2 103 11 153 12.5 46" [ref=e243]:
+                      - cell "Haras El Hodood v Smouha In-Play (Egyptian Cup)" [ref=e244]:
+                        - link "Haras El Hodood v Smouha In-Play" [ref=e245] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35123312//content:event-markets/35123312)
+                          - generic [ref=e247]: Haras El Hodood v Smouha In-Play
+                        - generic [ref=e248]: (Egyptian Cup)
+                      - cell "405,384" [ref=e249]
+                      - cell "1.67 4,035" [ref=e250]:
+                        - generic [ref=e251]:
+                          - generic [ref=e252]: "1.67"
+                          - generic [ref=e253]: 4,035
+                      - cell "1.69 798" [ref=e254]:
+                        - generic [ref=e255]:
+                          - generic [ref=e256]: "1.69"
+                          - generic [ref=e257]: "798"
+                      - cell "3.05 265" [ref=e258]:
+                        - generic [ref=e259]:
+                          - generic [ref=e260]: "3.05"
+                          - generic [ref=e261]: "265"
+                      - cell "3.2 103" [ref=e262]:
+                        - generic [ref=e263]:
+                          - generic [ref=e264]: "3.2"
+                          - generic [ref=e265]: "103"
+                      - cell "11 153" [ref=e266]:
+                        - generic [ref=e267]:
+                          - generic [ref=e268]: "11"
+                          - generic [ref=e269]: "153"
+                      - cell "12.5 46" [ref=e270]:
+                        - generic [ref=e271]:
+                          - generic [ref=e272]: "12.5"
+                          - generic [ref=e273]: "46"
+                      - cell [ref=e274]:
+                        - generic [ref=e275]:
+                          - button [ref=e276]:
+                            - img [ref=e277] [cursor=pointer]: info
+                          - button [ref=e278]:
+                            - img [ref=e279] [cursor=pointer]: add_circle
+                    - row "Raya Sporting FC v El Entag El Harby In-Play (Egyptian 2nd Division) 56,075 24 176 28 39 4.3 164 4.5 34 1.35 113 1.37 103" [ref=e280]:
+                      - cell "Raya Sporting FC v El Entag El Harby In-Play (Egyptian 2nd Division)" [ref=e281]:
+                        - link "Raya Sporting FC v El Entag El Harby In-Play" [ref=e282] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35124038//content:event-markets/35124038)
+                          - generic [ref=e284]: Raya Sporting FC v El Entag El Harby In-Play
+                        - generic [ref=e285]: (Egyptian 2nd Division)
+                      - cell "56,075" [ref=e286]
+                      - cell "24 176" [ref=e287]:
+                        - generic [ref=e288]:
+                          - generic [ref=e289]: "24"
+                          - generic [ref=e290]: "176"
+                      - cell "28 39" [ref=e291]:
+                        - generic [ref=e292]:
+                          - generic [ref=e293]: "28"
+                          - generic [ref=e294]: "39"
+                      - cell "4.3 164" [ref=e295]:
+                        - generic [ref=e296]:
+                          - generic [ref=e297]: "4.3"
+                          - generic [ref=e298]: "164"
+                      - cell "4.5 34" [ref=e299]:
+                        - generic [ref=e300]:
+                          - generic [ref=e301]: "4.5"
+                          - generic [ref=e302]: "34"
+                      - cell "1.35 113" [ref=e303]:
+                        - generic [ref=e304]:
+                          - generic [ref=e305]: "1.35"
+                          - generic [ref=e306]: "113"
+                      - cell "1.37 103" [ref=e307]:
+                        - generic [ref=e308]:
+                          - generic [ref=e309]: "1.37"
+                          - generic [ref=e310]: "103"
+                      - cell [ref=e311]:
+                        - generic [ref=e312]:
+                          - button [ref=e313]:
+                            - img [ref=e314] [cursor=pointer]: info
+                          - button [ref=e315]:
+                            - img [ref=e316] [cursor=pointer]: add_circle
+                    - row "Al Jazira v Ajman Club In-Play (UAE Arabian Gulf League) 256,526 - - 1.02 62,637 85 43 380 17 50 640 - -" [ref=e317]:
+                      - cell "Al Jazira v Ajman Club In-Play (UAE Arabian Gulf League)" [ref=e318]:
+                        - link "Al Jazira v Ajman Club In-Play" [ref=e319] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35124752//content:event-markets/35124752)
+                          - generic [ref=e321]: Al Jazira v Ajman Club In-Play
+                        - generic [ref=e322]: (UAE Arabian Gulf League)
+                      - cell "256,526" [ref=e323]
+                      - cell "- -" [ref=e324]:
+                        - generic [ref=e325]:
+                          - generic [ref=e326]: "-"
+                          - generic [ref=e327]: "-"
+                      - cell "1.02 62,637" [ref=e328]:
+                        - generic [ref=e329]:
+                          - generic [ref=e330]: "1.02"
+                          - generic [ref=e331]: 62,637
+                      - cell "85 43" [ref=e332]:
+                        - generic [ref=e333]:
+                          - generic [ref=e334]: "85"
+                          - generic [ref=e335]: "43"
+                      - cell "380 17" [ref=e336]:
+                        - generic [ref=e337]:
+                          - generic [ref=e338]: "380"
+                          - generic [ref=e339]: "17"
+                      - cell "50 640" [ref=e340]:
+                        - generic [ref=e341]:
+                          - generic [ref=e342]: "50"
+                          - generic [ref=e343]: "640"
+                      - cell "- -" [ref=e344]:
+                        - generic [ref=e345]:
+                          - generic [ref=e346]: "-"
+                          - generic [ref=e347]: "-"
+                      - cell [ref=e348]:
+                        - generic [ref=e349]:
+                          - button [ref=e350]:
+                            - img [ref=e351] [cursor=pointer]: info
+                          - button [ref=e352]:
+                            - img [ref=e353] [cursor=pointer]: add_circle
+                    - row "Dibba Al Fujairah v Al-Khaleej Khor Fakkan In-Play (UAE Arabian Gulf League) 101,498 3.9 573 4 47 2.6 72 2.62 1,484 2.74 197 2.8 66" [ref=e354]:
+                      - cell "Dibba Al Fujairah v Al-Khaleej Khor Fakkan In-Play (UAE Arabian Gulf League)" [ref=e355]:
+                        - link "Dibba Al Fujairah v Al-Khaleej Khor Fakkan In-Play" [ref=e356] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35124725//content:event-markets/35124725)
+                          - generic [ref=e358]: Dibba Al Fujairah v Al-Khaleej Khor Fakkan In-Play
+                        - generic [ref=e359]: (UAE Arabian Gulf League)
+                      - cell "101,498" [ref=e360]
+                      - cell "3.9 573" [ref=e361]:
+                        - generic [ref=e362]:
+                          - generic [ref=e363]: "3.9"
+                          - generic [ref=e364]: "573"
+                      - cell "4 47" [ref=e365]:
+                        - generic [ref=e366]:
+                          - generic [ref=e367]: "4"
+                          - generic [ref=e368]: "47"
+                      - cell "2.6 72" [ref=e369]:
+                        - generic [ref=e370]:
+                          - generic [ref=e371]: "2.6"
+                          - generic [ref=e372]: "72"
+                      - cell "2.62 1,484" [ref=e373]:
+                        - generic [ref=e374]:
+                          - generic [ref=e375]: "2.62"
+                          - generic [ref=e376]: 1,484
+                      - cell "2.74 197" [ref=e377]:
+                        - generic [ref=e378]:
+                          - generic [ref=e379]: "2.74"
+                          - generic [ref=e380]: "197"
+                      - cell "2.8 66" [ref=e381]:
+                        - generic [ref=e382]:
+                          - generic [ref=e383]: "2.8"
+                          - generic [ref=e384]: "66"
+                      - cell [ref=e385]:
+                        - generic [ref=e386]:
+                          - button [ref=e387]:
+                            - img [ref=e388] [cursor=pointer]: info
+                          - button [ref=e389]:
+                            - img [ref=e390] [cursor=pointer]: add_circle
+                    - row "Vukovar v KF Aresimi 1973 In-Play (Arena Cup) 83,506 1.25 1,100 1.27 2,289 7.4 91 8.8 37 11.5 273 15.5 115" [ref=e391]:
+                      - cell "Vukovar v KF Aresimi 1973 In-Play (Arena Cup)" [ref=e392]:
+                        - link "Vukovar v KF Aresimi 1973 In-Play" [ref=e393] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35124843//content:event-markets/35124843)
+                          - generic [ref=e395]: Vukovar v KF Aresimi 1973 In-Play
+                        - generic [ref=e396]: (Arena Cup)
+                      - cell "83,506" [ref=e397]
+                      - cell "1.25 1,100" [ref=e398]:
+                        - generic [ref=e399]:
+                          - generic [ref=e400]: "1.25"
+                          - generic [ref=e401]: 1,100
+                      - cell "1.27 2,289" [ref=e402]:
+                        - generic [ref=e403]:
+                          - generic [ref=e404]: "1.27"
+                          - generic [ref=e405]: 2,289
+                      - cell "7.4 91" [ref=e406]:
+                        - generic [ref=e407]:
+                          - generic [ref=e408]: "7.4"
+                          - generic [ref=e409]: "91"
+                      - cell "8.8 37" [ref=e410]:
+                        - generic [ref=e411]:
+                          - generic [ref=e412]: "8.8"
+                          - generic [ref=e413]: "37"
+                      - cell "11.5 273" [ref=e414]:
+                        - generic [ref=e415]:
+                          - generic [ref=e416]: "11.5"
+                          - generic [ref=e417]: "273"
+                      - cell "15.5 115" [ref=e418]:
+                        - generic [ref=e419]:
+                          - generic [ref=e420]: "15.5"
+                          - generic [ref=e421]: "115"
+                      - cell [ref=e422]:
+                        - generic [ref=e423]:
+                          - button [ref=e424]:
+                            - img [ref=e425] [cursor=pointer]: info
+                          - button [ref=e426]:
+                            - img [ref=e427] [cursor=pointer]: add_circle
+                    - row "Velez Mostar v Odra Opole In-Play (Arena Cup) 8,376 12.5 245 14 105 6.4 546 6.8 14 1.3 24 1.31 2,527" [ref=e428]:
+                      - cell "Velez Mostar v Odra Opole In-Play (Arena Cup)" [ref=e429]:
+                        - link "Velez Mostar v Odra Opole In-Play" [ref=e430] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35128173//content:event-markets/35128173)
+                          - generic [ref=e432]: Velez Mostar v Odra Opole In-Play
+                        - generic [ref=e433]: (Arena Cup)
+                      - cell "8,376" [ref=e434]
+                      - cell "12.5 245" [ref=e435]:
+                        - generic [ref=e436]:
+                          - generic [ref=e437]: "12.5"
+                          - generic [ref=e438]: "245"
+                      - cell "14 105" [ref=e439]:
+                        - generic [ref=e440]:
+                          - generic [ref=e441]: "14"
+                          - generic [ref=e442]: "105"
+                      - cell "6.4 546" [ref=e443]:
+                        - generic [ref=e444]:
+                          - generic [ref=e445]: "6.4"
+                          - generic [ref=e446]: "546"
+                      - cell "6.8 14" [ref=e447]:
+                        - generic [ref=e448]:
+                          - generic [ref=e449]: "6.8"
+                          - generic [ref=e450]: "14"
+                      - cell "1.3 24" [ref=e451]:
+                        - generic [ref=e452]:
+                          - generic [ref=e453]: "1.3"
+                          - generic [ref=e454]: "24"
+                      - cell "1.31 2,527" [ref=e455]:
+                        - generic [ref=e456]:
+                          - generic [ref=e457]: "1.31"
+                          - generic [ref=e458]: 2,527
+                      - cell [ref=e459]:
+                        - generic [ref=e460]:
+                          - button [ref=e461]:
+                            - img [ref=e462] [cursor=pointer]: info
+                          - button [ref=e463]:
+                            - img [ref=e464] [cursor=pointer]: add_circle
+                    - row "Iraq U23 v China U23 In-Play (AFC U23 Championship) 61,216 3.4 147 3.55 216 2.8 76 2.82 2,479 2.74 996 2.84 160" [ref=e465]:
+                      - cell "Iraq U23 v China U23 In-Play (AFC U23 Championship)" [ref=e466]:
+                        - link "Iraq U23 v China U23 In-Play" [ref=e467] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35085522//content:event-markets/35085522)
+                          - generic [ref=e469]: Iraq U23 v China U23 In-Play
+                        - generic [ref=e470]: (AFC U23 Championship)
+                      - cell "61,216" [ref=e471]
+                      - cell "3.4 147" [ref=e472]:
+                        - generic [ref=e473]:
+                          - generic [ref=e474]: "3.4"
+                          - generic [ref=e475]: "147"
+                      - cell "3.55 216" [ref=e476]:
+                        - generic [ref=e477]:
+                          - generic [ref=e478]: "3.55"
+                          - generic [ref=e479]: "216"
+                      - cell "2.8 76" [ref=e480]:
+                        - generic [ref=e481]:
+                          - generic [ref=e482]: "2.8"
+                          - generic [ref=e483]: "76"
+                      - cell "2.82 2,479" [ref=e484]:
+                        - generic [ref=e485]:
+                          - generic [ref=e486]: "2.82"
+                          - generic [ref=e487]: 2,479
+                      - cell "2.74 996" [ref=e488]:
+                        - generic [ref=e489]:
+                          - generic [ref=e490]: "2.74"
+                          - generic [ref=e491]: "996"
+                      - cell "2.84 160" [ref=e492]:
+                        - generic [ref=e493]:
+                          - generic [ref=e494]: "2.84"
+                          - generic [ref=e495]: "160"
+                      - cell [ref=e496]:
+                        - generic [ref=e497]:
+                          - button [ref=e498]:
+                            - img [ref=e499] [cursor=pointer]: info
+                          - button [ref=e500]:
+                            - img [ref=e501] [cursor=pointer]: add_circle
+              - generic [ref=e502]:
+                - generic [ref=e504]: Tennis
+                - combobox [ref=e505]:
+                  - option "All Leagues" [selected]
+                  - option "ITF Tunisia Futures"
+                  - option "Nottingham Challenger 2026"
+                  - option "Bangalore Challenger 2026"
+                - table [ref=e507]:
+                  - rowgroup [ref=e508]:
+                    - row "Event Matched 1 2" [ref=e509]:
+                      - columnheader "Event" [ref=e510]:
+                        - generic [ref=e511]:
+                          - generic [ref=e512]: Event
+                          - button [ref=e513] [cursor=pointer]:
+                            - img [ref=e514]: unfold_more
+                      - columnheader "Matched" [ref=e515]:
+                        - generic [ref=e516]:
+                          - generic [ref=e517]: Matched
+                          - button [ref=e518] [cursor=pointer]:
+                            - img [ref=e519]: unfold_more
+                      - columnheader "1" [ref=e520]
+                      - columnheader "2" [ref=e521]
+                      - columnheader [ref=e522]
+                  - rowgroup [ref=e523]:
+                    - row "Garrett Johns v Alaa Trifi In-Play (ITF Tunisia Futures) 128,603 1.02 5,968 1.03 5,680 34 172 55 111" [ref=e524]:
+                      - cell "Garrett Johns v Alaa Trifi In-Play (ITF Tunisia Futures)" [ref=e525]:
+                        - link "Garrett Johns v Alaa Trifi In-Play" [ref=e526] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35126913//content:event-markets/35126913)
+                          - generic [ref=e528]: Garrett Johns v Alaa Trifi In-Play
+                        - generic [ref=e529]: (ITF Tunisia Futures)
+                      - cell "128,603" [ref=e530]
+                      - cell "1.02 5,968" [ref=e531]:
+                        - generic [ref=e532]:
+                          - generic [ref=e533]: "1.02"
+                          - generic [ref=e534]: 5,968
+                      - cell "1.03 5,680" [ref=e535]:
+                        - generic [ref=e536]:
+                          - generic [ref=e537]: "1.03"
+                          - generic [ref=e538]: 5,680
+                      - cell "34 172" [ref=e539]:
+                        - generic [ref=e540]:
+                          - generic [ref=e541]: "34"
+                          - generic [ref=e542]: "172"
+                      - cell "55 111" [ref=e543]:
+                        - generic [ref=e544]:
+                          - generic [ref=e545]: "55"
+                          - generic [ref=e546]: "111"
+                      - cell [ref=e547]:
+                        - generic [ref=e548]:
+                          - button [ref=e549]:
+                            - img [ref=e550] [cursor=pointer]: info
+                          - button [ref=e551]:
+                            - img [ref=e552] [cursor=pointer]: add_circle
+                    - row "Kukushkin v Ca Kingsley In-Play (Nottingham Challenger 2026) 1,375,835 1.24 119 1.25 1,333 5 333 5.2 28" [ref=e553]:
+                      - cell "Kukushkin v Ca Kingsley In-Play (Nottingham Challenger 2026)" [ref=e554]:
+                        - link "Kukushkin v Ca Kingsley In-Play" [ref=e555] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35126062//content:event-markets/35126062)
+                          - generic [ref=e557]: Kukushkin v Ca Kingsley In-Play
+                        - generic [ref=e558]: (Nottingham Challenger 2026)
+                      - cell "1,375,835" [ref=e559]
+                      - cell "1.24 119" [ref=e560]:
+                        - generic [ref=e561]:
+                          - generic [ref=e562]: "1.24"
+                          - generic [ref=e563]: "119"
+                      - cell "1.25 1,333" [ref=e564]:
+                        - generic [ref=e565]:
+                          - generic [ref=e566]: "1.25"
+                          - generic [ref=e567]: 1,333
+                      - cell "5 333" [ref=e568]:
+                        - generic [ref=e569]:
+                          - generic [ref=e570]: "5"
+                          - generic [ref=e571]: "333"
+                      - cell "5.2 28" [ref=e572]:
+                        - generic [ref=e573]:
+                          - generic [ref=e574]: "5.2"
+                          - generic [ref=e575]: "28"
+                      - cell [ref=e576]:
+                        - generic [ref=e577]:
+                          - button [ref=e578]:
+                            - img [ref=e579] [cursor=pointer]: info
+                          - button [ref=e580]:
+                            - img [ref=e581] [cursor=pointer]: add_circle
+                    - row "Balaji/Oberleitner v Bar Biryukov/Lomakin In-Play (Bangalore Challenger 2026) 524 1.01 1,105 1000 11 1.01 1,107 990 10" [ref=e582]:
+                      - cell "Balaji/Oberleitner v Bar Biryukov/Lomakin In-Play (Bangalore Challenger 2026)" [ref=e583]:
+                        - link "Balaji/Oberleitner v Bar Biryukov/Lomakin In-Play" [ref=e584] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35126039//content:event-markets/35126039)
+                          - generic [ref=e586]: Balaji/Oberleitner v Bar Biryukov/Lomakin In-Play
+                        - generic [ref=e587]: (Bangalore Challenger 2026)
+                      - cell "524" [ref=e588]
+                      - cell "1.01 1,105" [ref=e589]:
+                        - generic [ref=e590]:
+                          - generic [ref=e591]: "1.01"
+                          - generic [ref=e592]: 1,105
+                      - cell "1000 11" [ref=e593]:
+                        - generic [ref=e594]:
+                          - generic [ref=e595]: "1000"
+                          - generic [ref=e596]: "11"
+                      - cell "1.01 1,107" [ref=e597]:
+                        - generic [ref=e598]:
+                          - generic [ref=e599]: "1.01"
+                          - generic [ref=e600]: 1,107
+                      - cell "990 10" [ref=e601]:
+                        - generic [ref=e602]:
+                          - generic [ref=e603]: "990"
+                          - generic [ref=e604]: "10"
+                      - cell [ref=e605]:
+                        - generic [ref=e606]:
+                          - button [ref=e607]:
+                            - img [ref=e608] [cursor=pointer]: info
+                          - button [ref=e609]:
+                            - img [ref=e610] [cursor=pointer]: add_circle
+                    - row "Isaro/Kaliyanda Poonach v Houkes/Visker In-Play (Bangalore Challenger 2026) 21,908 2.38 1,742 2.56 19 1.64 3,146 1.72 27" [ref=e611]:
+                      - cell "Isaro/Kaliyanda Poonach v Houkes/Visker In-Play (Bangalore Challenger 2026)" [ref=e612]:
+                        - link "Isaro/Kaliyanda Poonach v Houkes/Visker In-Play" [ref=e613] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35126497//content:event-markets/35126497)
+                          - generic [ref=e615]: Isaro/Kaliyanda Poonach v Houkes/Visker In-Play
+                        - generic [ref=e616]: (Bangalore Challenger 2026)
+                      - cell "21,908" [ref=e617]
+                      - cell "2.38 1,742" [ref=e618]:
+                        - generic [ref=e619]:
+                          - generic [ref=e620]: "2.38"
+                          - generic [ref=e621]: 1,742
+                      - cell "2.56 19" [ref=e622]:
+                        - generic [ref=e623]:
+                          - generic [ref=e624]: "2.56"
+                          - generic [ref=e625]: "19"
+                      - cell "1.64 3,146" [ref=e626]:
+                        - generic [ref=e627]:
+                          - generic [ref=e628]: "1.64"
+                          - generic [ref=e629]: 3,146
+                      - cell "1.72 27" [ref=e630]:
+                        - generic [ref=e631]:
+                          - generic [ref=e632]: "1.72"
+                          - generic [ref=e633]: "27"
+                      - cell [ref=e634]:
+                        - generic [ref=e635]:
+                          - button [ref=e636]:
+                            - img [ref=e637] [cursor=pointer]: info
+                          - button [ref=e638]:
+                            - img [ref=e639] [cursor=pointer]: add_circle
+                    - row "Duncan/Mackinlay v Hands/Wendelken In-Play (Nottingham Challenger 2026) 6,186 1.86 1,994 1.99 23 2 3,083 2.16 21" [ref=e640]:
+                      - cell "Duncan/Mackinlay v Hands/Wendelken In-Play (Nottingham Challenger 2026)" [ref=e641]:
+                        - link "Duncan/Mackinlay v Hands/Wendelken In-Play" [ref=e642] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35126759//content:event-markets/35126759)
+                          - generic [ref=e644]: Duncan/Mackinlay v Hands/Wendelken In-Play
+                        - generic [ref=e645]: (Nottingham Challenger 2026)
+                      - cell "6,186" [ref=e646]
+                      - cell "1.86 1,994" [ref=e647]:
+                        - generic [ref=e648]:
+                          - generic [ref=e649]: "1.86"
+                          - generic [ref=e650]: 1,994
+                      - cell "1.99 23" [ref=e651]:
+                        - generic [ref=e652]:
+                          - generic [ref=e653]: "1.99"
+                          - generic [ref=e654]: "23"
+                      - cell "2 3,083" [ref=e655]:
+                        - generic [ref=e656]:
+                          - generic [ref=e657]: "2"
+                          - generic [ref=e658]: 3,083
+                      - cell "2.16 21" [ref=e659]:
+                        - generic [ref=e660]:
+                          - generic [ref=e661]: "2.16"
+                          - generic [ref=e662]: "21"
+                      - cell [ref=e663]:
+                        - generic [ref=e664]:
+                          - button [ref=e665]:
+                            - img [ref=e666] [cursor=pointer]: info
+                          - button [ref=e667]:
+                            - img [ref=e668] [cursor=pointer]: add_circle
+              - generic [ref=e669]:
+                - generic [ref=e671]: Cricket
+                - combobox [ref=e672]:
+                  - option "All Leagues" [selected]
+                  - option "Bangladesh Premier League"
+                - table [ref=e674]:
+                  - rowgroup [ref=e675]:
+                    - row "Event Matched 1 2" [ref=e676]:
+                      - columnheader "Event" [ref=e677]:
+                        - generic [ref=e678]:
+                          - generic [ref=e679]: Event
+                          - button [ref=e680] [cursor=pointer]:
+                            - img [ref=e681]: unfold_more
+                      - columnheader "Matched" [ref=e682]:
+                        - generic [ref=e683]:
+                          - generic [ref=e684]: Matched
+                          - button [ref=e685] [cursor=pointer]:
+                            - img [ref=e686]: unfold_more
+                      - columnheader "1" [ref=e687]
+                      - columnheader "2" [ref=e688]
+                      - columnheader [ref=e689]
+                  - rowgroup [ref=e690]:
+                    - row "Sylhet Titans v Dhaka Capitals In-Play (Bangladesh Premier League) 77,937,066 2.22 6,886 2.26 126 1.8 120 1.81 8,446" [ref=e691]:
+                      - cell "Sylhet Titans v Dhaka Capitals In-Play (Bangladesh Premier League)" [ref=e692]:
+                        - link "Sylhet Titans v Dhaka Capitals In-Play" [ref=e693] [cursor=pointer]:
+                          - /url: /app/main/(navigation:event/35125328//content:event-markets/35125328)
+                          - generic [ref=e695]: Sylhet Titans v Dhaka Capitals In-Play
+                        - generic [ref=e696]: (Bangladesh Premier League)
+                      - cell "77,937,066" [ref=e697]
+                      - cell "2.22 6,886" [ref=e698]:
+                        - generic [ref=e699]:
+                          - generic [ref=e700]: "2.22"
+                          - generic [ref=e701]: 6,886
+                      - cell "2.26 126" [ref=e702]:
+                        - generic [ref=e703]:
+                          - generic [ref=e704]: "2.26"
+                          - generic [ref=e705]: "126"
+                      - cell "1.8 120" [ref=e706]:
+                        - generic [ref=e707]:
+                          - generic [ref=e708]: "1.8"
+                          - generic [ref=e709]: "120"
+                      - cell "1.81 8,446" [ref=e710]:
+                        - generic [ref=e711]:
+                          - generic [ref=e712]: "1.81"
+                          - generic [ref=e713]: 8,446
+                      - cell [ref=e714]:
+                        - generic [ref=e715]:
+                          - button [ref=e716]:
+                            - img [ref=e717] [cursor=pointer]: info
+                          - button [ref=e718]:
+                            - img [ref=e719] [cursor=pointer]: add_circle
+        - generic [ref=e724]:
+          - generic [ref=e726]: Betslip
+          - generic [ref=e728]:
+            - button "Main Market 0" [expanded] [ref=e729] [cursor=pointer]:
+              - generic [ref=e731]:
+                - text: Main Market
+                - generic [ref=e732]: "0"
+            - region "Main Market 0" [ref=e734]:
+              - table [ref=e738]:
+                - table [ref=e741]:
+                  - rowgroup [ref=e742]:
+                    - row "10 20 30 40 50 100 200 Garrett Johns 1.02 10 0.20 Cancel Place Bet" [ref=e743]:
+                      - cell "10 20 30 40 50 100 200 Garrett Johns 1.02 10 0.20 Cancel Place Bet" [ref=e744]:
+                        - generic [ref=e746]:
+                          - generic [ref=e747]:
+                            - generic [ref=e748] [cursor=pointer]: "10"
+                            - generic [ref=e749] [cursor=pointer]: "20"
+                            - generic [ref=e750] [cursor=pointer]: "30"
+                            - generic [ref=e751] [cursor=pointer]: "40"
+                            - generic [ref=e752] [cursor=pointer]: "50"
+                            - generic [ref=e753] [cursor=pointer]: "100"
+                            - generic [ref=e754] [cursor=pointer]: "200"
+                          - generic [ref=e755]:
+                            - generic [ref=e756]:
+                              - img [ref=e757] [cursor=pointer]: close
+                              - generic [ref=e758]: Garrett Johns
+                            - textbox [ref=e761]: "1.02"
+                            - textbox "stake" [ref=e763]: "10"
+                            - generic [ref=e764]: "0.20"
+                          - generic [ref=e766]:
+                            - button "Cancel" [ref=e767]:
+                              - generic [ref=e768]: Cancel
+                            - button "Place Bet" [ref=e771]:
+                              - generic [ref=e772]: Place Bet
+    - contentinfo [ref=e776]:
+      - paragraph [ref=e777]:
+        - text: Developed by
+        - link "Bookiekit.net" [ref=e778] [cursor=pointer]:
+          - /url: https://www.bookiekit.com
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - status [ref=e780]:
+                  - generic [ref=e791]:
+                    - text: Error.
+                    - text: BET_ACTION_ERROR
+                  - button "Close" [ref=e792]
+                - list
+```
