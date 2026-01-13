@@ -10,6 +10,7 @@ export class HomePage {
     // Dashboard indicator
     this.dashboardMenu = page.getByRole('link', { name: 'Home', exact: true });
 
+   
     // 💰 Balance
     this.balanceValue = page.locator(
       'span.balance-value.text-balance.balance-val'

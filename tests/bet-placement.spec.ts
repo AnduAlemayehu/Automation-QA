@@ -9,6 +9,12 @@ test.describe('Bet Placement – Exposure Update', () => {
       const inPlayPage = new InPlayPage(page);
       const betSlip = new BetSlipPage(page);
 
+      // ============ BEFORE SCREENSHOT ============
+      await page.screenshot({
+        path: `screenshots/${data.testName}-before-bet.png`,
+        fullPage: true
+      });
+
       // 💡 Capture BEFORE values
       const balanceBefore = await homePage.getBalance();
       const exposureBefore = await homePage.getExposure();
@@ -20,6 +26,11 @@ test.describe('Bet Placement – Exposure Update', () => {
 
       if (balanceBefore <= Number(data.stake)) {
         console.warn('❌ Insufficient balance, skipping test');
+        // Take screenshot of insufficient balance state
+        await page.screenshot({
+          path: `screenshots/${data.testName}-insufficient-balance.png`,
+          fullPage: true
+        });
         test.skip();
       }
 
@@ -31,6 +42,10 @@ test.describe('Bet Placement – Exposure Update', () => {
       const betSlipOpened = await betSlip.openBetSlip();
       if (!betSlipOpened) {
         console.log('⏭️ Skipping test: no valid back odds to place bet');
+        await page.screenshot({
+          path: `screenshots/${data.testName}-no-odds-available.png`,
+          fullPage: true
+        });
         test.skip();
       }
 
@@ -41,6 +56,12 @@ test.describe('Bet Placement – Exposure Update', () => {
 
       const result = await betSlip.waitForToast();
       console.log(`⏱ Bet placement duration: ${duration} ms`);
+
+      // ============ AFTER SCREENSHOT ============
+      await page.screenshot({
+        path: `screenshots/${data.testName}-after-bet.png`,
+        fullPage: true
+      });
 
       // 💡 Capture AFTER values
       const balanceAfter = await homePage.getBalance();
@@ -55,6 +76,12 @@ test.describe('Bet Placement – Exposure Update', () => {
       if (result === 'ERROR') {
         console.warn('❌ Bet rejected by system');
         console.log('⚠️ No change in balance, exposure, or available-to-bet');
+        
+        // Screenshot of error toast
+        await page.screenshot({
+          path: `screenshots/${data.testName}-bet-rejected.png`,
+          fullPage: true
+        });
         return;
       }
 
@@ -67,6 +94,11 @@ test.describe('Bet Placement – Exposure Update', () => {
         console.log('✅ Bet placed successfully: values updated after placing bet');
       } else {
         console.warn('❌ Bet placement did not update values');
+        // Screenshot for failed update
+        await page.screenshot({
+          path: `screenshots/${data.testName}-no-update.png`,
+          fullPage: true
+        });
       }
 
       // Optional: assert exposure updated
