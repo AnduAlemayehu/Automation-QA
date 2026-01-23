@@ -11,8 +11,12 @@ export const test = base.extend<{
     const homePage = new HomePage(page);
 
     await loginPage.goto();
-    await loginPage.login(loginData.username, loginData.password);
-    await homePage.waitForDashboard();
+    await loginPage.fillCredentials(
+    loginData.username,
+    loginData.password
+  );
+     await loginPage.submit();
+     await homePage.waitForPageReady();
 
     await use(homePage);
   }
