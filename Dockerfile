@@ -9,7 +9,7 @@ RUN npm install
 # Copy FULL directory structure
 COPY . .
 
-# RUN npx playwright install --with-deps
+RUN npx playwright install --with-deps
 
 # Respect directory structure, run only demo
 # CMD ["npx", "playwright", "test", "-g", "@demo"]
