@@ -1,6 +1,6 @@
 [
   {
     "testName": "Bet placement updates exposure without page refresh",
-    "stake": "50"
+    "stake": "100"
   }
 ]
