@@ -13,4 +13,4 @@ RUN npx playwright install --with-deps
 
 # Respect directory structure, run only demo
 # CMD ["npx", "playwright", "test", "-g", "@demo"]
-CMD ["npx", "playwright", "test", "tests/dev-v-001/"]
+CMD ["npx", "playwright", "test", "tests/"]

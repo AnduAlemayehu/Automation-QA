@@ -104,67 +104,6 @@ test.describe("@dev @OddsSync @Observational", () => {
     }
 
 
-    // starting for a mobile
-
-    //  const mobileOdds1 = mobile.getOddsData();
-    
-    // console.log("======= OnMobile Before Place Bet =======")
-
-    // console.log("onMobile app odds :", (await mobileOdds1).value);
-    // console.log("onMobile app time :", (await mobileOdds1).time);
-
-    // await mobile.clickOdds();
-
-    // const mobileResult = await mobile.placeBetOnce(String(stake));
-
-    // if (mobileResult === "ERROR") {
-    //   console.log("🔴 Place Bet response error ");
-     
-    // }
-
-    // if (mobileResult === "SUCCESS") {
-
-    //   const mobileOdds2 = mobile.getOddsData();
-    //   //   mobile.getOddsWithTimestamp(),
-    //   console.log("======= onMobile After Place Bet =======")
-    //   console.log("onMobile app odds  :", (await mobileOdds2).value);
-    //   console.log("onMobile app time :", (await mobileOdds2).time);
-
-    // }
-
-    // const [desktopOdds, mobileOdds] = await Promise.all([
-    //   desktop.getOddsWithTimestamp(),
-    //   mobile.getOddsWithTimestamp(),
-    // ]);
-
-    // console.log("Desktop odds:", desktopOdds.value, "at", desktopOdds.time);
-    // console.log("Mobile odds:", mobileOdds.value, "at", mobileOdds.time);
-
-    // const driftMs = Math.abs(desktopOdds.time - mobileOdds.time);
-    // console.log(`⏱ Odds drift: ${driftMs.toFixed(2)} ms`);
-
-    // if (desktopOdds.value !== mobileOdds.value) {
-    //   test.info().annotations.push({
-    //     type: "known-issue",
-    //     description: `Odds mismatch (Desktop=${desktopOdds.value}, Mobile=${mobileOdds.value})`,
-    //   });
-    // }
-
-    // ─────────────────────────────────────────────
-    // Place bet (Desktop reference source)
-    // ─────────────────────────────────────────────
-    // await desktop.placeBet();
-
-    // const matchedOdds = await desktop.getMatchedOdds();
-    // expect(isValidOdds(matchedOdds)).toBeTruthy();
-
-    // // ─────────────────────────────────────────────
-    // // Refresh Desktop → odds should sync to Mobile
-    // // ─────────────────────────────────────────────
-    // await desktopPage.reload({ waitUntil: "domcontentloaded" });
-
-    // expect(await desktop.getOdds()).toBe(mobileOdds.value);
-
     // ─────────────────────────────────────────────
     // Cleanup
     // ─────────────────────────────────────────────
