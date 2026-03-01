@@ -1,0 +1,18 @@
+{
+  "login": {
+    "username": "john",
+    "password": "John@123"
+  },
+  "modifySettings": {
+    "flashMode": "Disable",
+    "persistence": "Keep",
+    "appearance": "Traditional Betslip",
+    "newStake": "100"
+  },
+  "revertSettings": {
+    "flashMode": "Enable",
+    "persistence": "Cancel",
+    "appearance": "One-Click-Betting Betslip",
+    "originalStake": "80"
+  }
+}

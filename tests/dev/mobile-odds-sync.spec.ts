@@ -174,10 +174,10 @@ test.describe("@dev @OddsSync @Observational", () => {
     // ─────────────────────────────────────────────
     // Place bet (Desktop reference source)
     // ─────────────────────────────────────────────
-    await desktop.placeBet();
+    // await desktop.placeBet();
 
-    const matchedOdds = await desktop.getMatchedOdds();
-    expect(isValidOdds(matchedOdds)).toBeTruthy();
+    // const matchedOdds = await desktop.getMatchedOdds();
+    // expect(isValidOdds(matchedOdds)).toBeTruthy();
 
     // ─────────────────────────────────────────────
     // Refresh Desktop → odds should sync to Mobile

@@ -1,0 +1,14 @@
+{
+  "validProfileUpdate": {
+    "dateLabel": "Thursday, March 7",
+    "phone": "+93788880000",
+    "country": "Aland Islands",
+    "twoFactor": "disable"
+  },
+  "secondProfileUpdate": {
+    "dateLabel": "Monday, March 4",
+    "phone": "+93788880011",
+    "country": "Aland Islands",
+    "twoFactor": "enable"
+  }
+}

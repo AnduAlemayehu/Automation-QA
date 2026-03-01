@@ -1,0 +1,17 @@
+{
+  "english": {
+    "label": "English",
+    "option": "English",
+    "home": "Home",
+    "myMarkets": "My Markets",
+    "exposure": "Exposure:"
+  },
+  "spanish": {
+    "label": "Spanish",
+    "option": "Inglés",
+    "home": "Inicio",
+    "inPlay": "En Juego",
+    "sport": "Fútbol",
+    "exposure": "Exposición:"
+  }
+}

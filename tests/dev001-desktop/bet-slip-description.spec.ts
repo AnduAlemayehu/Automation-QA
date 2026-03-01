@@ -51,9 +51,9 @@ test.describe("@dev @bit @description", () => {
 
     await Promise.all([desktop.openInPlayEvent()]);
 
-    const desktopLowLiquidityMarket = await desktop.getLowliquidityMarket();
+    // const desktopLowLiquidityMarket = await desktop.getLowliquidityMarket();
 
-    console.log("Desktop low liquidity market:", desktopLowLiquidityMarket);
+    // console.log("Desktop low liquidity market:", desktopLowLiquidityMarket);
 
 
     // ─────────────────────────────────────────────
@@ -92,7 +92,11 @@ test.describe("@dev @bit @description", () => {
       console.log("Placed BET SLIP:", betSlipValues);
     }
 
+      await desktop.waitForOpen();
+      await new Promise(resolve => setTimeout(resolve, 10000));
+      const betSlipValues = await desktop.getBetSlipValues();
 
+      console.log("Placed BET SLIP:", betSlipValues);
     // ─────────────────────────────────────────────
     // Cleanup
     // ─────────────────────────────────────────────

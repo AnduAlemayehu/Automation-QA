@@ -204,16 +204,5 @@ async placeBetOnce(stake: string): Promise<'SUCCESS' | 'ERROR' | 'NONE'> {
   };
 }
 
-
-  async placeBet(stake = '10') {
-    await this.odds.first().click();
-    await this.page.fill('input[aria-label="Stake"]', stake);
-    await this.page.click('button:has-text("Place Bet")');
-  }
-
-  async getMatchedOdds(): Promise<string | null> {
-    const locator = this.page.locator('.placed-bets .bet-odds').first();
-    await locator.waitFor({ timeout: 10000 });
-    return (await locator.textContent())?.trim() || null;
-  }
+ 
 }
